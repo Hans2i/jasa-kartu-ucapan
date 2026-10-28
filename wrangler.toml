@@ -1,0 +1,16 @@
+name = "jasa-kartu-ucapan"
+main = "src/worker.js"
+compatibility_date = "2025-09-01"
+
+# File tampilan (folder public) disajikan langsung oleh Cloudflare.
+# Hanya alamat /api/* yang dijalankan lewat kode Worker.
+[assets]
+directory = "./public"
+run_worker_first = ["/api/*"]
+
+# Database D1. Ganti database_id dengan ID database yang kamu buat
+# di dashboard Cloudflare (lihat README, langkah 2).
+[[d1_databases]]
+binding = "DB"
+database_name = "portal-kartu"
+database_id = "bedcdef2-8a9c-49d0-b24f-9c05217f73e9"

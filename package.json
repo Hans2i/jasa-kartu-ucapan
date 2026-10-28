@@ -1,0 +1,13 @@
+{
+  "name": "jasa-kartu-ucapan",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portal kartu ucapan untuk Cloudflare Workers + D1",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
